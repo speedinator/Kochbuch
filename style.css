@@ -68,10 +68,10 @@ header {
   text-decoration: underline;
 }
 
-.main-container {
+.main-container { /* das der main container  "falls du den suchst" */
   padding:20px;
   width: 80%;
-  height: auto;
+  height: 100%;
   background-color: rgb(88, 95, 101);
   
 }
@@ -127,3 +127,6 @@ header {
   
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+
