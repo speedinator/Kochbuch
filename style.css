@@ -5,10 +5,10 @@
 body {
   padding: 0;
   margin: 0;
-  background: #33333A;
-  background: -moz-linear-gradient(top, #33333A 0%, #000000 100%);
-  background: -webkit-linear-gradient(top, #33333A 0%, #000000 100%);
-  background: linear-gradient(to bottom, #33333A 0%, #000000 100%);
+  background: #33333a;
+  background: -moz-linear-gradient(top, #33333a 0%, #000000 100%);
+  background: -webkit-linear-gradient(top, #33333a 0%, #000000 100%);
+  background: linear-gradient(to bottom, #33333a 0%, #000000 100%);
 }
 
 .page-container {
@@ -20,7 +20,7 @@ body {
 
 header {
   width: 80%;
-  height: 400px;
+  height: 350px;
   background-image: url(img/fresh-organic-vegetables-spoons-rustic-wooden-background-top-view-border-healthy-food-vegetarian-cooking-concept-63781109.jpg);
   object-fit: fill;
   object-position: center;
@@ -29,11 +29,14 @@ header {
 }
 .nav {
   width: 80%;
-  height:60px;
+  height: 60px;
   padding: 5px 0;
   background-color: rgb(12, 13, 14);
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 .nav ul {
   width: 100%;
@@ -56,77 +59,109 @@ header {
   background-color: rgba(0, 0, 0, 0);
 }
 .nav ul li a {
-  color: white;
+  color: rgb(88, 187, 252);
   text-decoration: none;
   font-size: 0.9rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    letter-spacing: 0.2rem;
+  letter-spacing: 0.2rem;
+  transition: ease-in 0.2s;
 }
 .nav ul li a:hover {
-  color: rgb(110, 175, 255);
+  color: rgb(224, 238, 255);
   text-decoration: underline;
+  background-color: rgb(61, 67, 72);
 }
 
-.main-container { /* das der main container  "falls du den suchst" */
-  padding:20px;
+.main-container {
+  /* das der main container  "falls du den suchst" */
+  padding: 20px;
   width: 80%;
   height: 100%;
-  background-color: rgb(88, 95, 101);
-  
+  background-color: rgb(49, 53, 56);
 }
-.main-container a{
+.main-container a {
   text-decoration: none;
-  
 }
 
-.grid-container{
-  display:grid;
-  grid-template-columns:4fr 2fr 2fr;
-  padding:0.5rem;
-  grid-gap: 0.9rem; 
+.grid-container {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr;
+  padding: 0.5rem;
+  grid-gap: 0.9rem;
 }
 
-.grid-container >div{
-  
-  padding:20px;
+.grid-container > div {
+  padding: 20px;
 }
 
-
-.gridcard{
-  height:100%;
-  padding:20px;
-  background-color: rgb(41, 41, 41);
-  color:rgb(205, 205, 205);
-  display:flex;
+.gridcard {
+  height: 100%;
+  padding: 20px;
+  background-color: rgb(12, 13, 14);
+  color: rgb(205, 205, 205);
+  display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  -webkit-box-shadow: 1px 5px 3px 4px rgba(0,0,0,0.24); 
-  box-shadow: 1px 5px 3px 4px rgba(0,0,0,0.24);
-  transition: all .2s ease-in-out;
+  -webkit-box-shadow: 1px 5px 3px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 1px 5px 3px 4px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
+  transition: ease-in 0.2s;
 }
-.gridcard:hover{
-  background-color:rgb(255, 255, 255);
-  transform: scale(1.02); 
-  color:black;
+.gridcard:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.02);
+  color: black;
 }
 
-.foodpic img{
-  width:100%;
+.foodpic img {
+  width: 100%;
 }
-.foodtopic{
-  font-size: 1.5rem;
+.foodtopic {
+  font-size: 1.9rem;
   font-weight: 600;
-  font-family: 'Times New Roman', Times, serif;
-  color:rgb(88, 187, 252);
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(88, 187, 252);
+  margin: 10px 0;
+  letter-spacing: 0.08rem;
 }
-.foodtxt{
+.foodtxt {
   font-size: 1rem;
-  
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.footer {
+  width: 80%;
+  height: 250px;
+  background-color: rgb(24, 26, 28);
+  padding: 20px;
+  display: flex;
+  align-content: center;
+}
+.footer-left {
+  display: flex;
+  flex: 1;
+  align-content: flex-start;
 
-
+  width: 100%;
+  height: auto;
+}
+.footer-right {
+  display: flex;
+  flex: 1;
+}
+.sm-icon {
+  width: 100%;
+}
+.sm-icon ul {
+  width: 100%;
+}
+.sm-icon ul li {
+  color: rgb(88, 187, 252);
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
