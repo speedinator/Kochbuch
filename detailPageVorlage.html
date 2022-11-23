@@ -7,32 +7,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>cookbook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <div class="page-container">
-        <header> </header>
+    <div class="container">
+        <!-- <div class="page-container"> -->
+            <!-- <header> </header> -->
 
 
-        <nav class="nav">
-            <ul>
-                <li><a href="#">REZEPTE</a> </li>
-                <li><a href="#">FOOD BLOG</a></li>
-                <li><a href="#">PIZZA DELIVERY</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
+            <nav class="nav row">
+                <ul>
+                    <li><a href="#">REZEPTE</a> </li>
+                    <li><a href="#">FOOD BLOG</a></li>
+                    <li><a href="#">PIZZA DELIVERY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
 
 
-        <section class="main-container">
+            <!-- <section class="main-container"> -->
 
             <!--HIER KANN DAS BOOT STRAP ZEUGS REIN -->
-
+        
             
 
 
-            <div>DAS DIV KANN WEG</div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="zutaten">
+                        <div class="zutaten_ueberschrift">
+                            <h2>Zutaten</h2>
+                        </div>
+                        <div class="zutaten_liste">
+                            <ul>
+                                <li>200 g Mehl (Typ 405)</li>
+                                <li>200 g Hartweizengrieß</li>
+                                <li>1 Prise Salz</li>
+                                <li>200 ml kaltes Wasser</li>
 
+                            </ul>
+                        </div>
+                        
+                    </div>         
+                </div>
+                
+                <div class="col-md-9">
+                    <div class="bild_ueberschrift">
+                        <h1>Spaghetti</h1>
+                    </div>
+                    <div id="bild" class="bild_gericht">
+                        <img src="/img/01.jpg" alt="">
+                    </div>
+
+                </div> 
+
+            </div>
+
+            <div class="row">
+                <h2> Zubereitung</h2>
+                <ul>
+                    <li>Sieben Sie das Mehl und vermischen Sie dann Mehl, Hartweizengrieß und Salz. Weitere Gewürze sind nicht erforderlich.</li>
+                    <li>Geben Sie dann nach und nach Wasser hinzu und kneten Sie den Teig etwa fünf Minuten, bevor Sie je nach Bedarf weiter Wasser zugeben. Insgesamt sollte der Teig nicht länger als 10 Minuten geknetet werden, da sich sonst das Klebereiweiß zu sehr verbindet und die Masse zäh und klebrig wird. Der Teig ist fertig, wenn er nach dem Eindrücken mit einem Finger innerhalb von Sekunden wieder in seine ursprüngliche Form zurückspringt.</li>
+                    <li>Wickeln Sie den Teig dann in ein feuchtes Geschirrtuch und lassen Sie ihn 30 Minuten ruhen.</li>
+                    <li>Teilen Sie sich nach und nach Portionen des Teigs ab und walzen Sie die Portionen zu immer flacheren, dünneren Teigstücken. Stellen Sie die Walze bei jedem Durchgang dünner, bis die gewünschte Dicke erreicht ist.</li>
+                    <li>Wenn Sie mit der Küchenmaschine arbeiten, setzen Sie am besten einfach den Spaghettiaufsatz auf die Küchenmaschine und schneiden die Nudeln dann in der gewünschten Länge ab.</li>
+                </ul>
+
+            </div>
+
+            
 
 
            
@@ -42,7 +87,9 @@
 
 
 
-        </section>
+        
+             <!-- </section> -->
+        </div>
     </div>
 
 </body>

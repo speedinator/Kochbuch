@@ -128,5 +128,45 @@ header {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.row {
+  background-color: rgb(236, 93, 23);
+  border: rgb(255, 199, 64) solid 1px;
+  width: 100%;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
 
+  
+}
 
+.col {
+  color: red;
+  justify-content: center;
+  border: rgb(255, 199, 64) solid 1px;
+
+}
+
+.col-3 {
+  color: red;
+  justify-content: center;
+  border: rgb(255, 199, 64) solid 1px;
+}
+
+.zutaten_ueberschrift h2 {
+  color: black;
+  text-align: center;
+
+}
+
+.bild_ueberschrift h1 {
+  text-align: center;
+}
+
+.bild_gericht img {
+  max-width: 100%;
+  justify-content: center;
+  }
+
+.row ul li {
+  list-style-type: decimal;
+}
