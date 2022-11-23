@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #33333A;
+  background: -moz-linear-gradient(top, #33333A 0%, #000000 100%);
+  background: -webkit-linear-gradient(top, #33333A 0%, #000000 100%);
+  background: linear-gradient(to bottom, #33333A 0%, #000000 100%);
+}
+
+.page-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 80%;
+  height: 400px;
+  background-image: url(img/fresh-organic-vegetables-spoons-rustic-wooden-background-top-view-border-healthy-food-vegetarian-cooking-concept-63781109.jpg);
+  object-fit: fill;
+  object-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.nav {
+  width: 80%;
+  height:60px;
+  padding: 5px 0;
+  background-color: rgb(12, 13, 14);
+  display: flex;
+  align-items: center;
+}
+.nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+  justify-content: center;
+  gap: 0.4rem;
+  align-items: center;
+}
+.nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2rem;
+}
+.nav ul li a:hover {
+  color: rgb(110, 175, 255);
+  text-decoration: underline;
+}
+
+.main-container {
+  padding:20px;
+  width: 80%;
+  height: auto;
+  background-color: rgb(88, 95, 101);
+  
+}
+.main-container a{
+  text-decoration: none;
+  
+}
+
+.grid-container{
+  display:grid;
+  grid-template-columns:4fr 2fr 2fr;
+  padding:0.5rem;
+  grid-gap: 0.9rem; 
+}
+
+.grid-container >div{
+  
+  padding:20px;
+}
+
+
+.gridcard{
+  height:100%;
+  padding:20px;
+  background-color: rgb(41, 41, 41);
+  color:rgb(205, 205, 205);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 5px 3px 4px rgba(0,0,0,0.24); 
+  box-shadow: 1px 5px 3px 4px rgba(0,0,0,0.24);
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.gridcard:hover{
+  background-color:rgb(255, 255, 255);
+  transform: scale(1.02); 
+  color:black;
+}
+
+.foodpic img{
+  width:100%;
+}
+.foodtopic{
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  color:rgb(88, 187, 252);
+}
+.foodtxt{
+  font-size: 1rem;
+  
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
