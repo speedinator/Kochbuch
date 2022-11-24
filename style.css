@@ -138,6 +138,13 @@ header {
 
   
 }
+.zutaten {
+  order:1;
+}
+
+.bildspalte {
+  order: 0;
+}
 
 .col {
   color: red;
@@ -151,6 +158,7 @@ header {
   justify-content: center;
   border: rgb(255, 199, 64) solid 1px;
 }
+
 
 .zutaten_ueberschrift h2 {
   color: black;
